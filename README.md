@@ -1,8 +1,8 @@
 # mn2-graalvm-coroutine
 
-Steps to reproduce bug in Micronaut 2.0.1 + GraalVM 20.1.0 + Kotlin 1.3.72 + coroutineContext
+Steps to reproduce bug in Micronaut 2.0.1 + GraalVM 20.1.0 + Kotlin 1.3.72 + coroutineScope
 
-It is not possible to use coroutineContext to make async calls to other suspend functions in parallel.
+It is not possible to use coroutineScope to make async calls to other suspend functions in parallel.
 
 # Clone & build
 git clone https://github.com/mliberato/mn2-graalvm-coroutine.git
