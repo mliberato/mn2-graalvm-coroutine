@@ -5,14 +5,21 @@ Steps to reproduce bug in Micronaut 2.0.1 + GraalVM 20.1.0 + Kotlin 1.3.72 + cor
 It is not possible to use coroutineScope to make async calls to other suspend functions in parallel.
 
 # Clone & build
+```shell
 git clone https://github.com/mliberato/mn2-graalvm-coroutine.git
 cd mn2-graalvm-coroutine
 ./gradlew assemble && ./docker-build.sh
+```
 
 # Run standard kotlin (port 8080):
+```shell
 ./gradlew run
+```
+
 # Run native-image in docker (port 8081):
+```shell
 docker run -p 8081:8080 demo
+```
 
 # Test standard & native-image
 ```shell
