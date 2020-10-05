@@ -12,9 +12,6 @@ group "com.example"
 repositories {
     mavenCentral()
     jcenter()
-    flatDir {
-        dirs '/Users/mliberato/Projects/opensource/micronaut-kotlin/kotlin-runtime/build/libs'
-    }
 }
 
 micronaut {
